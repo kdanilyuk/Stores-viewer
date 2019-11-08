@@ -1,0 +1,21 @@
+<div class="py-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <span class="anchor" id="formLogin"></span>
+      <div class="card rounded-0">
+        <div class="card-header">
+          <h3 class="mb-0">Update product {{_store.oldProduct.name}}</h3>
+        </div>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-group">
+              <label>New description</label>
+              <input type="text" class="form-control rounded-0" [(ngModel)]="newDescription" name="description" required>
+            </div>
+            <button type="button" (click)="Save()" class="btn btn-primary float-right">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

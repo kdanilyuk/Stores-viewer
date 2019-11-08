@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Working hours</th>
+      <th scope="col">Products of store</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let store of stores">
+      <th scope="row">{{store.name}}</th>
+      <td>{{store.address}}</td>
+      <td>{{store.openingTime}}:{{store.closingTime}}</td>
+      <td><button type="button" (click)="ViewProducts(store.storeId)" class="btn btn-primary float-left">View</button></td>
+    </tr>
+  </tbody>
+</table>
